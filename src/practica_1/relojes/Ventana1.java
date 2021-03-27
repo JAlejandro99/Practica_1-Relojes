@@ -3,17 +3,28 @@ package practica_1.relojes;
 public class Ventana1 extends javax.swing.JFrame {
     public Ventana1() {
         initComponents();
-        this.jPanel1.add(new RelojGrafico(false,29,29));
-        this.jPanel1.add(new RelojGrafico(false,307,29));
-        this.jPanel1.add(new RelojGrafico(false,29,157));
-        this.jPanel1.add(new RelojGrafico(false,307,157));
+        RelojGrafico r1 = new RelojGrafico(false,29,29);
+        RelojGrafico r2 = new RelojGrafico(true,307,29);
+        RelojGrafico r3 = new RelojGrafico(true,29,157);
+        RelojGrafico r4 = new RelojGrafico(true,307,157);
+        r1.run();
+        r2.run();
+        r3.run();
+        r4.run();
+        this.jPanel1.add(r1);
+        this.jPanel1.add(r2);
+        this.jPanel1.add(r3);
+        this.jPanel1.add(r4);
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenu1 = new javax.swing.JMenu();
         jPanel1 = new javax.swing.JPanel();
         salir = new javax.swing.JButton();
+
+        jMenu1.setText("jMenu1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -96,6 +107,7 @@ public class Ventana1 extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton salir;
     // End of variables declaration//GEN-END:variables
