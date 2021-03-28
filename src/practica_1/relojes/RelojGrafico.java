@@ -33,7 +33,7 @@ public class RelojGrafico extends JPanel implements Runnable {
         this.setBackground(new Color(38,70,95));
         this.inicializarBoton();
         this.aleatorio = aleatorio;
-        continuar = true;
+        continuar = true;      
     }
     public void iniciarReloj(){
         reloj = new Thread(){
@@ -75,7 +75,7 @@ public class RelojGrafico extends JPanel implements Runnable {
         continuar = false;
         ReajustarHora rh = new ReajustarHora();
         rh.setTitle("Reajustar hora");
-        rh.setVisible(true);
+        rh.setVisible(true);      
         rh.aceptar.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e) {
                 horas = rh.getHoras();
@@ -123,10 +123,10 @@ public class RelojGrafico extends JPanel implements Runnable {
             hora += "0"+segundos;
         else
             hora += segundos;
-        g.setFont( new Font( "Tahoma", Font.ITALIC, 50 ) );
+        g.setFont( new Font( "Tahoma", Font.BOLD, 50 ) );
         g.drawString(hora,9,70);
         if(velocidad!=1){
-            g.setFont( new Font( "Tahoma", Font.ITALIC, 22 ) );
+            g.setFont( new Font( "Tahoma", Font.BOLD, 22 ) );
             g.drawString("x"+velocidad,11,93);
         }
     }

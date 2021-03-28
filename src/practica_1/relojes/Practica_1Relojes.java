@@ -5,5 +5,6 @@ public class Practica_1Relojes {
         Ventana1 v1 = new Ventana1();
         v1.setTitle("Práctica 1 - Relojes");
         v1.setVisible(true);
+        v1.setResizable(false);
     }
 }

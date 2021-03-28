@@ -1,6 +1,7 @@
 package practica_1.relojes;
 
 import javax.swing.JTextField;
+import javax.swing.WindowConstants;
 
 public class ReajustarHora extends javax.swing.JFrame {
     public ReajustarHora() {
@@ -10,6 +11,8 @@ public class ReajustarHora extends javax.swing.JFrame {
         this.segundos.setValue(0);
         this.velocidad.setText("1");
         this.velocidad.setHorizontalAlignment(JTextField.RIGHT);
+        this.setResizable(false);
+        this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
     }
     public int getHoras(){
         return (int) this.horas.getValue();
