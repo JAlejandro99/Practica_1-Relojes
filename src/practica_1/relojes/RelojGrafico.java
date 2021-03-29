@@ -123,10 +123,10 @@ public class RelojGrafico extends JPanel implements Runnable {
             hora += "0"+segundos;
         else
             hora += segundos;
-        g.setFont( new Font( "Tahoma", Font.BOLD, 50 ) );
+        g.setFont( new Font( "Tahoma", Font.BOLD, 45 ) );
         g.drawString(hora,9,70);
         if(velocidad!=1){
-            g.setFont( new Font( "Tahoma", Font.BOLD, 22 ) );
+            g.setFont( new Font( "Tahoma", Font.ITALIC, 20 ) );
             g.drawString("x"+velocidad,11,93);
         }
     }
