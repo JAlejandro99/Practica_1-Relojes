@@ -133,9 +133,7 @@ public class RelojGrafico extends JPanel implements Runnable {
     @Override
     public void run() {
         if(aleatorio){
-            horas = 22;//Horas aleatorias
-            minutos = 1;
-            segundos = 1;
+            horaAleatoria();
         }else{
             Calendar c = new GregorianCalendar();
             Date fechaHoraActual = new Date();
@@ -143,7 +141,14 @@ public class RelojGrafico extends JPanel implements Runnable {
             horas = c.get(c.HOUR_OF_DAY);
             minutos = c.get(c.MINUTE);
             segundos = c.get(c.SECOND);
+            System.out.println(c.HOUR_OF_DAY+" "+c.MINUTE+c.SECOND);
         }
         iniciarReloj();
+    }
+    
+    private void horaAleatoria(){
+        horas = (int) Math.floor(Math.random()*24);
+        minutos = (int) Math.floor(Math.random()*60);
+        segundos = (int) Math.floor(Math.random()*60);
     }
 }
