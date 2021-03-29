@@ -89,7 +89,7 @@ public class RelojGrafico extends JPanel implements Runnable {
     }
     protected void inicializarBoton(){
         boton = new JButton();
-        ImageIcon icono=new ImageIcon((new ImageIcon("editar2.png").getImage()).getScaledInstance(20,20,Image.SCALE_SMOOTH));
+        ImageIcon icono=new ImageIcon((new ImageIcon("src/icons/editar.png").getImage()).getScaledInstance(20,20,Image.SCALE_SMOOTH));
         boton.setIcon(icono);
         boton.setSize(10,10);
         boton.setOpaque(false);
