@@ -6,6 +6,7 @@ import javax.swing.WindowConstants;
 public class ReajustarHora extends javax.swing.JFrame {
     public ReajustarHora() {
         initComponents();
+        this.setLocationRelativeTo(null);
         this.horas.setValue(0);
         this.minutos.setValue(0);
         this.segundos.setValue(0);

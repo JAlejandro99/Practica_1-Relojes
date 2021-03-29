@@ -3,6 +3,7 @@ package practica_1.relojes;
 public class Ventana1 extends javax.swing.JFrame {
     public Ventana1() {
         initComponents();
+        this.setLocationRelativeTo(null);
         RelojGrafico r1 = new RelojGrafico(false,29,29);
         RelojGrafico r2 = new RelojGrafico(true,307,29);
         RelojGrafico r3 = new RelojGrafico(true,29,157);
