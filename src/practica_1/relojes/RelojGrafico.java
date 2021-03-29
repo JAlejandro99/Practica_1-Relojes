@@ -141,7 +141,6 @@ public class RelojGrafico extends JPanel implements Runnable {
             horas = c.get(c.HOUR_OF_DAY);
             minutos = c.get(c.MINUTE);
             segundos = c.get(c.SECOND);
-            System.out.println(c.HOUR_OF_DAY+" "+c.MINUTE+c.SECOND);
         }
         iniciarReloj();
     }
