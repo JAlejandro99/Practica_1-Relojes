@@ -82,6 +82,7 @@ public class RelojGrafico extends JPanel implements Runnable {
                 minutos = rh.getMinutos();
                 segundos = rh.getSegundos();
                 velocidad = rh.getVelocidad();
+                repaint();
                 continuar = true;
                 iniciarReloj();
             }
